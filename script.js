@@ -22,9 +22,9 @@ document.addEventListener("DOMContentLoaded", () => {
     // Default Gallery Photos (Feature 1)
     if (!localStorage.getItem("schoolGallery")) {
         const defaultGallery = [
-            { title: "Modern Computer Laboratory", photo: "https://images.unsplash.com/photo-1562774053-701939374585?w=500&auto=format&fit=crop&q=60" },
-            { title: "School Assembly Ground", photo: "https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=500&auto=format&fit=crop&q=60" },
-            { title: "Primary Science Practical Session", photo: "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=500&auto=format&fit=crop&q=60" }
+            { title: "Modern Computer Laboratory", photo: "https://via.placeholder.com/600x400?text=Placeholder+Image?w=500&auto=format&fit=crop&q=60" },
+            { title: "School Assembly Ground", photo: "https://via.placeholder.com/600x400?text=Placeholder+Image?w=500&auto=format&fit=crop&q=60" },
+            { title: "Primary Science Practical Session", photo: "https://via.placeholder.com/600x400?text=Placeholder+Image?w=500&auto=format&fit=crop&q=60" }
         ];
         localStorage.setItem("schoolGallery", JSON.stringify(defaultGallery));
     }
