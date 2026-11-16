@@ -163,7 +163,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // 3. FEATURE 4: LIVE COUNTDOWN TIMER LOGIC
     // ==========================================
     function updateCountdown() {
-        const examDate = new Date("December 10, 2026 09:00:00").getTime();
+        const examDate = new Date("Monday, February 1, 2027 09:00:00").getTime();
         const now = new Date().getTime();
         const distance = examDate - now;
 
