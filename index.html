@@ -9,13 +9,15 @@
 <body>
 
 <header style="background: #440606; color: white; padding: 15px 30px; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 999;">
-    <div class="logo">
+    <div class="logo" style="display: flex; align-items: center; gap: 12px;">
+        <img src="badge.jpg" alt="St. Lawrence Junior School Lira Badge" style="width: 45px; height: 45px; object-fit: contain; border-radius: 50%; background: white; padding: 2px;">
         <h2 style="margin: 0; font-size: 20px;">St. Lawrence Junior School Lira</h2>
     </div>
     
     <nav>
         <ul style="list-style: none; display: flex; gap: 20px; align-items: center; margin: 0; padding: 0;">
             <li><a href="index.html" style="color: white; text-decoration: none;">Home</a></li>
+            <li><a href="#about" style="color: white; text-decoration: none;">About</a></li>
             <li><a href="#events-news" style="color: white; text-decoration: none;">News</a></li>
             <li><a href="#gallery" style="color: white; text-decoration: none;">Gallery</a></li>
             <li><a href="#workers-admin" style="color: white; text-decoration: none;">Staff</a></li>
@@ -29,13 +31,67 @@
 
     <!-- Hero Section -->
     <section class="hero">
-        <h1>Welcome to St. Lawrence Junior School Lira</h1>
-        <p>"We Aim At Excellence"</p>
-        <p>Every Child is Unique, Capable and deserves Holistic Quality Education</p>
-        <a href="#portal-selection" class="btn">Access Portals & Resources</a>
+        <h1 style="font-size: 36px; font-weight: 700; letter-spacing: 0.5px; margin-bottom: 15px;">Welcome to St. Lawrence Junior School Lira</h1>
+        
+        <!-- School Badge Centered -->
+        <div style="margin: 20px auto;">
+            <img src="badge.jpg" alt="St. Lawrence Junior School Lira Badge" style="width: 100px; height: 100px; object-fit: contain; border-radius: 50%; background: white; padding: 4px; box-shadow: 0 8px 16px rgba(0,0,0,0.3); border: 2px solid #f59e0b;">
+        </div>
+
+        <!-- Stylish Motto & Philosophy Styling -->
+        <div style="max-width: 700px; margin: 0 auto; padding: 0 20px;">
+            <p style="font-size: 20px; font-style: italic; font-weight: 600; color: #f59e0b; letter-spacing: 1px; margin: 10px 0;">"We Aim At Excellence"</p>
+            <div style="width: 60px; height: 3px; background: #f59e0b; margin: 15px auto; border-radius: 2px;"></div>
+            <p style="font-size: 16px; color: #e2e8f0; line-height: 1.6; font-weight: 300; margin-bottom: 25px;">Every Child is Unique, Capable and deserves Holistic Quality Education</p>
+        </div>
+
+        <a href="#portal-selection" class="btn" style="box-shadow: 0 4px 10px rgba(0,0,0,0.2);">Access Portals & Resources</a>
     </section>
 
-    <!-- Feature 4: Live Countdown Timer to Term Milestones -->
+    <!-- About Our School & Core Identity Section -->
+    <section id="about" class="portal-section" style="background: #ffffff; border-bottom: 1px solid #e2e8f0;">
+        <div style="max-width: 1100px; margin: 0 auto;">
+            <h2 style="text-align: center; margin-bottom: 10px; color: #440606;">About St. Lawrence Junior School Lira</h2>
+            <p style="text-align: center; color: #64748b; margin-bottom: 40px; max-width: 700px; margin-left: auto; margin-right: auto;">
+                Nurturing future leaders through academic excellence, discipline, and digital learning in Northern Uganda.
+            </p>
+
+            <div class="notes-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
+                
+                <div class="note-card" style="border-top: 4px solid #1e3a8a !important;">
+                    <h3 style="color: #1e3a8a; margin-top: 0;">🌟 Vision & Mission</h3>
+                    <p><strong>Vision:</strong> To be a leading center of academic excellence and holistic child development in Uganda.</p>
+                    <p><strong>Mission:</strong> To provide quality, affordable, and practical education that equips every learner with moral integrity and vital skills.</p>
+                </div>
+
+                <div class="note-card" style="border-top: 4px solid #059669 !important;">
+                    <h3 style="color: #059669; margin-top: 0;">💡 Philosophy & Core Values</h3>
+                    <p><strong>Philosophy:</strong> Every child is unique, capable, and deserves holistic quality education.</p>
+                    <p><strong>Core Values:</strong></p>
+                    <ul style="margin: 5px 0 0 20px; padding: 0; font-size: 14px; color: #475569;">
+                        <li>God-fearing & Moral Integrity</li>
+                        <li>Academic Excellence & Hard Work</li>
+                        <li>Discipline & Respect</li>
+                        <li>Digital Literacy & Innovation</li>
+                    </ul>
+                </div>
+
+                <div class="note-card" style="border-top: 4px solid #d97706 !important;">
+                    <h3 style="color: #d97706; margin-top: 0;">🏫 Campus & Facilities</h3>
+                    <p>Our campus is equipped with modern learning infrastructure designed to support comprehensive pupil growth:</p>
+                    <ul style="margin: 5px 0 0 20px; padding: 0; font-size: 14px; color: #475569;">
+                        <li>Modern Computer & ICT Laboratory</li>
+                        <li>Well-stocked Primary & Nursery Sections</li>
+                        <li>Spacious Sports Grounds for Athletics & Football</li>
+                        <li>Secure Boarding & Day Facilities</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Live Countdown Timer -->
     <section style="background: #0f172a; color: white; padding: 15px 20px; text-align: center; border-bottom: 2px solid #f59e0b;">
         <div style="max-width: 900px; margin: 0 auto; display: flex; justify-content: center; align-items: center; gap: 20px; flex-wrap: wrap;">
             <span style="font-size: 14px; font-weight: bold; color: #f59e0b;">⏳ Countdown to Start of Term:</span>
@@ -61,111 +117,85 @@
         <div style="max-width: 1100px; margin: 0 auto;">
             <h2 style="text-align: center; margin-bottom: 10px;">📰 Latest School News & Upcoming Events</h2>
             <p style="text-align: center; color: #64748b; margin-bottom: 30px;">Stay up to date with what is happening across our campus.</p>
-            
-            <div id="newsContainer" class="notes-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
-                <!-- Dynamically populated news -->
-            </div>
+            <div id="newsContainer" class="notes-grid"></div>
         </div>
     </section>
 
-    <!-- Feature 1: Interactive Photo Gallery & Campus Tour -->
+    <!-- Campus Photo Gallery -->
     <section id="gallery" class="portal-section" style="background: #ffffff; border-bottom: 1px solid #e2e8f0;">
         <div style="max-width: 1100px; margin: 0 auto;">
             <h2 style="text-align: center; margin-bottom: 10px;">🖼️ Campus Photo Gallery & Facilities Tour</h2>
             <p style="text-align: center; color: #64748b; margin-bottom: 30px;">Explore our Administration Block, Nursery Section, Primary Section and sports grounds.</p>
-            
-            <div id="galleryContainer" class="notes-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
-                <!-- Dynamically loaded gallery images -->
-            </div>
+            <div id="galleryContainer" class="notes-grid"></div>
         </div>
     </section>
 
-    <!-- Workers, Staff & Administration Section -->
+    <!-- Staff Directory -->
     <section id="workers-admin" class="portal-section" style="background: #f8fafc; border-bottom: 1px solid #e2e8f0;">
         <div style="max-width: 1100px; margin: 0 auto;">
             <h2 style="text-align: center; margin-bottom: 10px;">👩‍🏫 School Administration & Staff Directory</h2>
             <p style="text-align: center; color: #64748b; margin-bottom: 30px;">Meet the dedicated administration and teaching staff guiding our students.</p>
-            
-            <div id="workersContainer" class="notes-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px;">
-                <!-- Dynamically populated staff -->
-            </div>
+            <div id="workersContainer" class="notes-grid"></div>
         </div>
     </section>
 
-    <!-- Public Community & Parent Information Hub -->
+    <!-- Parent & Community Hub -->
     <section id="community-hub" class="portal-section" style="background: #ffffff; border-bottom: 1px solid #e2e8f0;">
         <div style="max-width: 1100px; margin: 0 auto;">
             <h2 style="text-align: center; margin-bottom: 10px;">Parent & Community Hub</h2>
             <p style="text-align: center; color: #64748b; margin-bottom: 30px;">Welcome parents, guardians, and visitors! Access public school updates and admissions info below.</p>
-            
-            <div class="notes-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
-                
+            <div class="notes-grid">
                 <div class="note-card">
                     <span class="badge" style="background: #dbeafe; color: #1e40af; padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: bold;">Admissions 2026</span>
                     <h3>Online Application Form</h3>
-                    <p>Apply for admission for your child into Nursery through Primary 7 directly online or visit our School.</p>
-                    <div class="card-actions">
-                        <button onclick="openAdmissionModal()" class="download-btn" style="width: 100%; background: #2563eb;">📝 Apply Online</button>
-                    </div>
+                    <p>Apply for admission for your child into Nursery through Primary 7 directly online.</p>
+                    <div class="card-actions"><button onclick="openAdmissionModal()" class="download-btn" style="width: 100%; background: #2563eb;">📝 Apply Online</button></div>
                 </div>
-
                 <div class="note-card">
                     <span class="badge" style="background: #d1fae5; color: #065f46; padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: bold;">Finance</span>
                     <h3>School Fees & Requirements</h3>
-                    <p>View termly tuition breakdown, uniform guidelines, and authorized school payment channels for parents.</p>
-                    <div class="card-actions">
-                        <button onclick="openFeeModal()" class="download-btn" style="width: 100%; background: #059669;">💰 View Fee Structure</button>
-                    </div>
+                    <p>View termly tuition breakdown, uniform guidelines, and authorized payment channels.</p>
+                    <div class="card-actions"><button onclick="openFeeModal()" class="download-btn" style="width: 100%; background: #059669;">💰 View Fee Structure</button></div>
                 </div>
-
-                <!-- Feature 2: Report Card Checker Card -->
                 <div class="note-card">
                     <span class="badge" style="background: #fef3c7; color: #92400e; padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: bold;">Results</span>
                     <h3>Student Report Card Checker</h3>
-                    <p>Check end-of-term academic performance and grades securely online using a Student ID.</p>
-                    <div class="card-actions">
-                        <button onclick="openReportModal()" class="download-btn" style="width: 100%; background: #d97706;">📊 Check Report Card</button>
-                    </div>
+                    <p>Check end-of-term academic performance and grades securely using a Student ID.</p>
+                    <div class="card-actions"><button onclick="openReportModal()" class="download-btn" style="width: 100%; background: #d97706;">📊 Check Report Card</button></div>
                 </div>
-
             </div>
         </div>
     </section>
 
-    <!-- Portal Access Selection Section -->
+    <!-- Portal Access Selection -->
     <section id="portal-selection" class="portal-section" style="text-align: center; padding: 50px 20px;">
         <div style="max-width: 900px; margin: 0 auto;">
             <h2>Secure Portal Access</h2>
             <p style="color: #64748b; margin-bottom: 30px;">Select your portal below to securely log into your respective dashboard.</p>
-            
-            <div class="notes-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px;">
-                
+            <div class="notes-grid">
                 <div class="note-card" style="text-align: center; padding: 30px;">
                     <div style="font-size: 40px; margin-bottom: 10px;">🎓</div>
                     <h3>Student Portal</h3>
-                    <p style="color: #64748b; font-size: 14px;">Access learning notes, revision guides, past papers, and quizzes. <em>(student / student123)</em></p>
+                    <p style="color: #64748b; font-size: 14px;">Access learning notes, revision guides, past papers, and quizzes.</p>
                     <button onclick="openRoleLogin('student')" class="download-btn" style="width: 100%; margin-top: 15px;">Student Login</button>
                 </div>
-
                 <div class="note-card" style="text-align: center; padding: 30px;">
                     <div style="font-size: 40px; margin-bottom: 10px;">📚</div>
                     <h3>Teacher Portal</h3>
-                    <p style="color: #64748b; font-size: 14px;">Upload study materials, manage notes, and track class progress. <em>(teacher / teacher123)</em></p>
+                    <p style="color: #64748b; font-size: 14px;">Upload study materials, manage notes, and track class progress. </em></p>
                     <button onclick="openRoleLogin('teacher')" class="download-btn" style="width: 100%; margin-top: 15px; background: #15803d;">Teacher Login</button>
                 </div>
-
                 <div class="note-card" style="text-align: center; padding: 30px;">
                     <div style="font-size: 40px; margin-bottom: 10px;">⚙️</div>
                     <h3>Administrator Portal</h3>
-                    <p style="color: #64748b; font-size: 14px;">Manage school content, news, gallery photos, staff, and inquiries. <em>(admin / admin123)</em></p>
+                    <p style="color: #64748b; font-size: 14px;">Manage school content, news, gallery photos, staff, and inquiries.</em></p>
                     <button onclick="openRoleLogin('admin')" class="download-btn" style="width: 100%; margin-top: 15px; background: #b91c1c;">Admin Login</button>
                 </div>
-
             </div>
         </div>
     </section>
 
-    <!-- Protected Teacher Dashboard Section (Initially Hidden) -->
+    <!-- Teacher Dashboard Section -->
     <section id="teacherDashboardSection" class="portal-section" style="display: none; background: #f0fdf4; border-top: 2px solid #bbf7d0; border-bottom: 2px solid #bbf7d0;">
         <div style="max-width: 900px; margin: 0 auto; text-align: center;">
             <div style="background: white; padding: 30px; border-radius: 8px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);">
@@ -176,89 +206,50 @@
         </div>
     </section>
 
-    <!-- Protected Administrator Control Panel & Content Management (Initially Hidden) -->
+    <!-- Administrator Dashboard Section -->
     <section id="adminDashboardSection" class="portal-section" style="display: none; background: #fef2f2; border-top: 2px solid #fecaca; border-bottom: 2px solid #fecaca;">
         <div style="max-width: 1000px; margin: 0 auto;">
             <div style="background: white; padding: 30px; border-radius: 8px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);">
-                <h3 style="color: #b91c1c; margin-top: 0; display: flex; align-items: center; gap: 10px;">⚙️ School Administration & Content Management Panel</h3>
-                <p style="color: #64748b; margin-bottom: 25px;">Only administrators can add news, events, gallery photos, staff members with photos, edit school fees, and review parent messages.</p>
+                <h3 style="color: #b91c1c; margin-top: 0;">⚙️ School Administration & Content Management Panel</h3>
+                <p style="color: #64748b; margin-bottom: 25px;">Only administrators can add news, events, gallery photos, staff members, and review parent messages.</p>
                 
-                <!-- Admin Add News & Events Form with Photo URL -->
+                <!-- Admin Add News Form -->
                 <div style="background: #f8fafc; padding: 20px; border-radius: 6px; border: 1px solid #e2e8f0; margin-bottom: 20px; text-align: left;">
-                    <h4 style="color: #b91c1c; margin-top: 0;">📰 Add New School Event or News (with Photo)</h4>
+                    <h4 style="color: #b91c1c; margin-top: 0;">📰 Add New School Event or News</h4>
                     <form id="adminNewsForm">
-                        <div class="form-group" style="margin-bottom: 10px;">
-                            <label style="font-size: 13px; font-weight: bold;">Title:</label>
-                            <input type="text" id="newsTitle" required placeholder="e.g., Annual Music Festival" style="padding: 8px; width: 100%; border: 1px solid #cbd5e1; border-radius: 4px; box-sizing: border-box;">
-                        </div>
-                        <div class="form-group" style="margin-bottom: 10px;">
-                            <label style="font-size: 13px; font-weight: bold;">Description:</label>
-                            <textarea id="newsDesc" rows="2" required placeholder="Details about the event..." style="padding: 8px; width: 100%; border: 1px solid #cbd5e1; border-radius: 4px; box-sizing: border-box;"></textarea>
-                        </div>
-                        <div class="form-group" style="margin-bottom: 10px;">
-                            <label style="font-size: 13px; font-weight: bold;">Date & Location:</label>
-                            <input type="text" id="newsMeta" required placeholder="e.g., Date: April 5 | 📍 Main Hall" style="padding: 8px; width: 100%; border: 1px solid #cbd5e1; border-radius: 4px; box-sizing: border-box;">
-                        </div>
-                        <div class="form-group" style="margin-bottom: 10px;">
-                            <label style="font-size: 13px; font-weight: bold;">Photo URL (Image link):</label>
-                            <input type="url" id="newsPhoto" placeholder="https://example.com/image.jpg" style="padding: 8px; width: 100%; border: 1px solid #cbd5e1; border-radius: 4px; box-sizing: border-box;">
-                        </div>
-                        <button type="submit" class="download-btn" style="background: #b91c1c; border: none; padding: 8px 15px;">Publish News/Event with Photo</button>
+                        <div class="form-group"><label>Title:</label><input type="text" id="newsTitle" required placeholder="e.g., Annual Music Festival"></div>
+                        <div class="form-group"><label>Description:</label><textarea id="newsDesc" rows="2" required placeholder="Details..."></textarea></div>
+                        <div class="form-group"><label>Date & Location:</label><input type="text" id="newsMeta" required placeholder="e.g., Date: April 5 | Main Hall"></div>
+                        <div class="form-group"><label>Select News Photo from Device (Optional):</label><input type="file" id="newsPhotoFile" accept="image/*" style="background: white;"></div>
+                        <button type="submit" class="download-btn" style="background: #b91c1c; border: none; padding: 8px 15px;">Publish News</button>
                     </form>
                 </div>
 
-                <!-- Admin Add Gallery Photo Form -->
+                <!-- Admin Add Gallery Photo Form (File Upload) -->
                 <div style="background: #f8fafc; padding: 20px; border-radius: 6px; border: 1px solid #e2e8f0; margin-bottom: 20px; text-align: left;">
                     <h4 style="color: #b91c1c; margin-top: 0;">🖼️ Add Photo to Campus Gallery</h4>
                     <form id="adminGalleryForm">
-                        <div class="form-group" style="margin-bottom: 10px;">
-                            <label style="font-size: 13px; font-weight: bold;">Photo Title / Caption:</label>
-                            <input type="text" id="galleryTitle" required placeholder="e.g., Modern Computer Laboratory Session" style="padding: 8px; width: 100%; border: 1px solid #cbd5e1; border-radius: 4px; box-sizing: border-box;">
-                        </div>
-                        <div class="form-group" style="margin-bottom: 10px;">
-                            <label style="font-size: 13px; font-weight: bold;">Photo Image URL:</label>
-                            <input type="url" id="galleryPhoto" required placeholder="https://example.com/lab.jpg" style="padding: 8px; width: 100%; border: 1px solid #cbd5e1; border-radius: 4px; box-sizing: border-box;">
-                        </div>
+                        <div class="form-group"><label>Photo Title / Caption:</label><input type="text" id="galleryTitle" required placeholder="e.g., Computer Laboratory"></div>
+                        <div class="form-group"><label>Select Photo from Device:</label><input type="file" id="galleryPhotoFile" accept="image/*" required style="background: white;"></div>
                         <button type="submit" class="download-btn" style="background: #b91c1c; border: none; padding: 8px 15px;">Upload Gallery Photo</button>
                     </form>
                 </div>
 
-                <!-- Admin Add Staff / Worker Form with Photo URL -->
+                <!-- Admin Add Staff Form (File Upload) -->
                 <div style="background: #f8fafc; padding: 20px; border-radius: 6px; border: 1px solid #e2e8f0; margin-bottom: 20px; text-align: left;">
-                    <h4 style="color: #b91c1c; margin-top: 0;">👩‍🏫 Add Staff Member / Worker (with Photo)</h4>
+                    <h4 style="color: #b91c1c; margin-top: 0;">👩‍🏫 Add Staff Member</h4>
                     <form id="adminWorkerForm">
-                        <div class="form-group" style="margin-bottom: 10px;">
-                            <label style="font-size: 13px; font-weight: bold;">Full Name & Title:</label>
-                            <input type="text" id="workerName" required placeholder="e.g., Mr. John Doe (Science Teacher)" style="padding: 8px; width: 100%; border: 1px solid #cbd5e1; border-radius: 4px; box-sizing: border-box;">
-                        </div>
-                        <div class="form-group" style="margin-bottom: 10px;">
-                            <label style="font-size: 13px; font-weight: bold;">Role / Department:</label>
-                            <input type="text" id="workerRole" required placeholder="e.g., Senior Science Department" style="padding: 8px; width: 100%; border: 1px solid #cbd5e1; border-radius: 4px; box-sizing: border-box;">
-                        </div>
-                        <div class="form-group" style="margin-bottom: 10px;">
-                            <label style="font-size: 13px; font-weight: bold;">Short Bio:</label>
-                            <textarea id="workerBio" rows="2" required placeholder="Qualifications or responsibilities..." style="padding: 8px; width: 100%; border: 1px solid #cbd5e1; border-radius: 4px; box-sizing: border-box;"></textarea>
-                        </div>
-                        <div class="form-group" style="margin-bottom: 10px;">
-                            <label style="font-size: 13px; font-weight: bold;">Photo URL (Image link):</label>
-                            <input type="url" id="workerPhoto" placeholder="https://example.com/teacher.jpg" style="padding: 8px; width: 100%; border: 1px solid #cbd5e1; border-radius: 4px; box-sizing: border-box;">
-                        </div>
-                        <button type="submit" class="download-btn" style="background: #b91c1c; border: none; padding: 8px 15px;">Add Staff Member with Photo</button>
+                        <div class="form-group"><label>Full Name & Title:</label><input type="text" id="workerName" required placeholder="e.g., Mr. John Doe"></div>
+                        <div class="form-group"><label>Role / Department:</label><input type="text" id="workerRole" required placeholder="e.g., Science Department"></div>
+                        <div class="form-group"><label>Short Bio:</label><textarea id="workerBio" rows="2" required placeholder="Qualifications..."></textarea></div>
+                        <div class="form-group"><label>Select Staff Photo from Device:</label><input type="file" id="workerPhotoFile" accept="image/*" style="background: white;"></div>
+                        <button type="submit" class="download-btn" style="background: #b91c1c; border: none; padding: 8px 15px;">Add Staff Member</button>
                     </form>
                 </div>
 
-                <!-- Admin Fee Editor Panel -->
-                <div style="background: #f8fafc; padding: 20px; border-radius: 6px; border: 1px solid #e2e8f0; margin-bottom: 20px; text-align: left;">
-                    <h4 style="color: #b91c1c; margin-top: 0;">📝 Quick Edit School Fee (P.1 - P.3 Day Fee)</h4>
-                    <div style="display: flex; gap: 10px; margin-top: 10px;">
-                        <input type="text" id="adminFeeP1P3" value="350,000/=" style="padding: 8px; width: 100%; max-width: 300px; border: 1px solid #cbd5e1; border-radius: 4px;">
-                        <button onclick="saveFeeUpdates()" class="download-btn" style="background: #b91c1c; border: none; padding: 8px 15px;">Save Fee</button>
-                    </div>
-                </div>
-
-                <!-- Admin Contact Messages Inbox -->
-                <div style="background: #f8fafc; padding: 20px; border-radius: 6px; border: 1px solid #e2e8f0; margin-bottom: 20px; text-align: left;">
-                    <h4 style="color: #b91c1c; margin-top: 0; display: flex; align-items: center; gap: 8px;">📥 Parent Inquiries Inbox</h4>
+                <!-- Admin Inbox -->
+                <div style="background: #f8fafc; padding: 20px; border-radius: 6px; border: 1px solid #e2e8f0; text-align: left;">
+                    <h4 style="color: #b91c1c; margin-top: 0;">📥 Parent Inquiries Inbox</h4>
                     <div id="adminInboxContainer" style="max-height: 200px; overflow-y: auto; background: white; border: 1px solid #cbd5e1; border-radius: 4px; padding: 10px;">
                         <p style="font-size: 13px; color: #64748b; text-align: center; margin: 10px 0;">No new messages yet.</p>
                     </div>
@@ -267,360 +258,132 @@
         </div>
     </section>
 
-    <!-- Learning Notes Portal & Feature 3: Past PLE/Mock Papers (Unlocked only upon student login) -->
+    <!-- Notes Portal (Student View) -->
     <section id="notes" class="portal-section" style="display: none;">
         <div style="max-width: 1100px; margin: 0 auto;">
             <h2 style="text-align: center; margin-bottom: 25px;">St. Lawrence Learning Notes & Past PLE Papers Portal</h2>
-            
             <div class="filter-container">
                 <select id="classFilter">
                     <option value="all">All Classes</option>
                     <option value="p1">Primary 1</option>
-                    <option value="p2">Primary 2</option>
-                    <option value="p3">Primary 3</option>
-                    <option value="p4">Primary 4</option>
-                    <option value="p5">Primary 5</option>
-                    <option value="p6">Primary 6</option>
                     <option value="p7">Primary 7 (PLE Candidate)</option>
                 </select>
-
                 <select id="subjectFilter">
                     <option value="all">All Subjects</option>
                     <option value="math">Mathematics</option>
-                    <option value="english">English</option>
                     <option value="science">Science</option>
-                    <option value="sst">Social Studies (SST)</option>
                 </select>
             </div>
-
             <div id="notesContainer" class="notes-grid">
-                
-                <!-- Feature 3: Downloadable Past PLE Papers -->
                 <div class="note-card" data-class="p7" data-subject="science" style="border: 2px solid #f59e0b !important;">
                     <span class="badge science" style="background: #fef3c7; color: #92400e;">🔥 P.7 Candidate - Past PLE Paper</span>
                     <h3>2025 UNEB PLE Science Past Paper</h3>
-                    <p>Official Primary Leaving Examination past paper with comprehensive marking guide for candidates.</p>
+                    <p>Official Primary Leaving Examination past paper with comprehensive marking guide.</p>
                     <div class="card-actions">
-                        <button class="preview-btn" data-title="2025 UNEB PLE Science Past Paper" data-file="notes/2025_ple_science.pdf">Preview</button>
+                        <button class="preview-btn" data-title="2025 UNEB PLE Science" data-file="notes/2025_ple_science.pdf">Preview</button>
                         <a href="notes/2025_ple_science.pdf" download class="download-btn">Download PDF</a>
                     </div>
                 </div>
-
-                <div class="note-card" data-class="p7" data-subject="math" style="border: 2px solid #f59e0b !important;">
-                    <span class="badge math" style="background: #fef3c7; color: #92400e;">🔥 P.7 Candidate - Mock Exam</span>
-                    <h3>2026 District Mock Mathematics Examination</h3>
-                    <p>Topical revision paper compiled by top educators in Northern Uganda for mock preparation.</p>
-                    <div class="card-actions">
-                        <button class="preview-btn" data-title="2026 District Mock Mathematics" data-file="notes/2026_mock_math.pdf">Preview</button>
-                        <a href="notes/2026_mock_math.pdf" download class="download-btn">Download PDF</a>
-                    </div>
-                </div>
-
-                <div class="note-card" data-class="p5" data-subject="math">
-                    <span class="badge math">P.5 - Mathematics</span>
-                    <h3>Fractions & Decimals Revision</h3>
-                    <p>Comprehensive exercises covering addition, subtraction, and word problems on fractions.</p>
-                    <div class="card-actions">
-                        <button class="preview-btn" data-title="P.5 Mathematics - Fractions & Decimals" data-file="notes/p5_math_fractions.pdf">Preview Note</button>
-                        <a href="notes/p5_math_fractions.pdf" download class="download-btn">Download</a>
-                    </div>
-                </div>
-
-                <div class="note-card" data-class="p7" data-subject="science">
-                    <span class="badge science">P.7 - Science</span>
-                    <h3>The Human Circulatory System</h3>
-                    <p>Detailed diagrams, notes, and key terms on blood circulation and heart functions.</p>
-                    <div class="card-actions">
-                        <button class="preview-btn" data-title="P.7 Science - Circulatory System" data-file="notes/p7_science_circulation.pdf">Preview Note</button>
-                        <a href="notes/p7_science_circulation.pdf" download class="download-btn">Download</a>
-                    </div>
-                </div>
-
-                <div class="note-card" data-class="p4" data-subject="sst">
-                    <span class="badge sst">P.4 - SST</span>
-                    <h3>Our District and Leaders</h3>
-                    <p>Learn about local government structures, roles of leaders, and map reading symbols.</p>
-                    <div class="card-actions">
-                        <button class="preview-btn" data-title="P.4 SST - Our District and Leaders" data-file="notes/p4_sst_leaders.pdf">Preview Note</button>
-                        <a href="notes/p4_sst_leaders.pdf" download class="download-btn">Download</a>
-                    </div>
-                </div>
-
             </div>
         </div>
     </section>
 
-    <!-- Interactive Multi-Subject Quiz Section (Unlocked only upon student login) -->
+    <!-- Quiz Section -->
     <section id="quiz-section" class="quiz-container" style="display: none;">
         <h2>Interactive Self-Marking Quiz</h2>
         <p class="quiz-subtitle">Test your knowledge and track your high scores!</p>
-        
-        <div class="progress-box">
-            <p>🏆 <strong>Your Best Score:</strong> <span id="highScoreDisplay">0</span>%</p>
-        </div>
-
-        <div class="filter-container" style="margin-bottom: 20px;">
-            <select id="quizCategorySelect">
-                <option value="scienceP5">P.5 Science Quiz</option>
-                <option value="mathP3">P.3 Mathematics Quiz</option>
-            </select>
-        </div>
-        
+        <div class="progress-box"><p>🏆 <strong>Your Best Score:</strong> <span id="highScoreDisplay">0</span>%</p></div>
         <div id="dynamicQuizForm"></div>
-
         <button id="submitQuizBtn" class="btn-primary" style="display: none;">Submit Answers</button>
         <div id="quizResult" class="result-box" style="display: none;"></div>
     </section>
 
-    <!-- PDF Preview Modal -->
-    <div id="pdfModal" class="modal">
-        <div class="modal-content">
-            <span class="close-modal">&times;</span>
-            <h3 id="modalTitle">Document Preview</h3>
-            <div class="modal-body">
-                <p id="modalFileText">Loading document preview for <span id="fileNameTarget"></span>...</p>
-                <div class="mock-pdf-viewer">
-                    📄 [Simulated PDF Viewer Window]<br>
-                    <small>Full text and diagrams for this study note would display here securely.</small>
-                </div>
-            </div>
-        </div>
-    </div>
-
+    <!-- Modals -->
+    <div id="pdfModal" class="modal"><div class="modal-content"><span class="close-modal">&times;</span><h3 id="modalTitle">Document Preview</h3><div class="mock-pdf-viewer">📄 [Simulated PDF Viewer Window]</div></div></div>
+    
     <!-- Parent Fee Structure Modal -->
     <div id="feeModal" class="modal" style="display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.5);">
         <div class="modal-content" style="background: white; margin: 8% auto; padding: 30px; width: 100%; max-width: 600px; border-radius: 8px; position: relative; max-height: 80vh; overflow-y: auto;">
             <span class="close-fee-modal" style="position: absolute; right: 20px; top: 15px; font-size: 24px; cursor: pointer; color: #64748b;">&times;</span>
             
-            <h3 style="margin-top: 0; color: #065f46; text-align: center;">💰 St. Lawrence Junior School Lira - Fees & Requirements</h3>
-            <p style="text-align: center; font-size: 14px; color: #64748b; margin-bottom: 20px;">Termly tuition breakdown and admission requirements for 2026.</p>
+            <h3 style="margin-top: 0; color: #440606; text-align: center; font-size: 22px; letter-spacing: 0.5px;">SCHOOL FEES STRUCTURE</h3>
+            <p style="text-align: center; font-size: 14px; color: #64748b; font-style: italic; margin-bottom: 20px;">Affordable Quality Education</p>
             
             <div style="margin-bottom: 20px;">
-                <h4 style="color: #1e3a8a; border-bottom: 2px solid #e2e8f0; padding-bottom: 5px;">1. Termly Tuition Fees</h4>
-                <table style="width: 100%; border-collapse: collapse; margin-top: 10px; font-size: 14px;">
+                <table style="width: 100%; border-collapse: collapse; margin-top: 10px; font-size: 15px;">
                     <thead>
-                        <tr style="background: #f8fafc; text-align: left;">
-                            <th style="padding: 8px; border: 1px solid #cbd5e1;">Class Section</th>
-                            <th style="padding: 8px; border: 1px solid #cbd5e1;">Day Scholar (UGX)</th>
-                            <th style="padding: 8px; border: 1px solid #cbd5e1;">Boarding (UGX)</th>
+                        <tr style="background: #440606; color: white; text-align: left;">
+                            <th style="padding: 10px; border: 1px solid #cbd5e1;">CLASS</th>
+                            <th style="padding: 10px; border: 1px solid #cbd5e1;">TERMLY FEE (UGX)</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td style="padding: 8px; border: 1px solid #cbd5e1;">Primary 1 - Primary 3</td>
-                            <td style="padding: 8px; border: 1px solid #cbd5e1;">350,000/=</td>
-                            <td style="padding: 8px; border: 1px solid #cbd5e1;">650,000/=</td>
+                            <td style="padding: 10px; border: 1px solid #cbd5e1; font-weight: 500;">Nursery</td>
+                            <td style="padding: 10px; border: 1px solid #cbd5e1; font-weight: bold; color: #1e3a8a;">300,000/=</td>
                         </tr>
                         <tr>
-                            <td style="padding: 8px; border: 1px solid #cbd5e1;">Primary 4 - Primary 6</td>
-                            <td style="padding: 8px; border: 1px solid #cbd5e1;">400,000/=</td>
-                            <td style="padding: 8px; border: 1px solid #cbd5e1;">720,000/=</td>
+                            <td style="padding: 10px; border: 1px solid #cbd5e1; font-weight: 500;">P.1 - P.3</td>
+                            <td style="padding: 10px; border: 1px solid #cbd5e1; font-weight: bold; color: #1e3a8a;">320,000/=</td>
                         </tr>
                         <tr>
-                            <td style="padding: 8px; border: 1px solid #cbd5e1;">Primary 7 (Candidate Class)</td>
-                            <td style="padding: 8px; border: 1px solid #cbd5e1;">480,000/=</td>
-                            <td style="padding: 8px; border: 1px solid #cbd5e1;">850,000/=</td>
+                            <td style="padding: 10px; border: 1px solid #cbd5e1; font-weight: 500;">P.4 - P.5</td>
+                            <td style="padding: 10px; border: 1px solid #cbd5e1; font-weight: bold; color: #1e3a8a;">340,000/=</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 10px; border: 1px solid #cbd5e1; font-weight: 500;">P.6 - P.7</td>
+                            <td style="padding: 10px; border: 1px solid #cbd5e1; font-weight: bold; color: #1e3a8a;">360,000/=</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 10px; border: 1px solid #cbd5e1; font-weight: 500;">Uniforms (Full set)</td>
+                            <td style="padding: 10px; border: 1px solid #cbd5e1; font-weight: bold; color: #1e3a8a;">150,000/=</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 10px; border: 1px solid #cbd5e1; font-weight: 500;">Admission Fee</td>
+                            <td style="padding: 10px; border: 1px solid #cbd5e1; font-weight: bold; color: #1e3a8a;">20,000/=</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
 
-            <div style="margin-bottom: 20px;">
-                <h4 style="color: #1e3a8a; border-bottom: 2px solid #e2e8f0; padding-bottom: 5px;">2. General Requirements (All Pupils)</h4>
-                <ul style="font-size: 14px; color: #334155; padding-left: 20px; line-height: 1.6;">
-                    <li>2 Reams of Photocopy Paper (Double A or Rotatrim)</li>
-                    <li>1 Dozen Exercise Books (96 pages) and mathematical set</li>
-                    <li>1 Rim of Toilet Paper per month (3 per term)</li>
-                    <li>Clear passport-size photographs (2 copies)</li>
-                </ul>
+            <div style="background: #f8fafc; border: 1px dashed #cbd5e1; padding: 12px; border-radius: 6px; text-align: center; margin-bottom: 20px;">
+                <p style="margin: 0; font-size: 14px; color: #334155; font-weight: 600;">Admission runs from 8:00am to 5:00pm, Monday to Saturday</p>
             </div>
 
             <div style="text-align: center;">
-                <button onclick="alert('Fee structure downloaded successfully!'); document.getElementById('feeModal').style.display='none';" class="download-btn" style="background: #059669; padding: 10px 20px; border: none; border-radius: 6px; color: white; font-weight: bold; cursor: pointer;">Download Official Fee Circular</button>
+                <button onclick="alert('Fee structure downloaded successfully!'); document.getElementById('feeModal').style.display='none';" class="download-btn" style="background: #440606; padding: 10px 20px; border: none; border-radius: 6px; color: white; font-weight: bold; cursor: pointer;">Download Official Fee Circular</button>
             </div>
         </div>
     </div>
+    <div id="reportModal" class="modal" style="display: none;"><div class="modal-content" style="max-width: 550px;"><span class="close-report-modal">&times;</span><h3 style="color: #d97706; text-align: center;">📊 Report Card Portal</h3><form id="reportForm"><div class="form-group"><label>Student ID:</label><input type="text" id="reportStudentId" required placeholder="STU-2026"></div><button type="submit" class="download-btn" style="width: 100%; background: #d97706; border: none; padding: 10px;">View Report</button></form><div id="reportResultBox" style="display: none; margin-top: 15px; background: #f8fafc; padding: 15px; border-radius: 6px;"><h4 style="color: #1e3a8a; margin-top: 0;">Apio Sarah (Primary 5) - All Grades D1 / D2 (Excellent)</h4></div></div></div>
 
-    <!-- Feature 2: Student Report Card Checker Modal -->
-    <div id="reportModal" class="modal" style="display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.5);">
-        <div class="modal-content" style="background: white; margin: 8% auto; padding: 30px; width: 100%; max-width: 550px; border-radius: 8px; position: relative;">
-            <span class="close-report-modal" style="position: absolute; right: 20px; top: 15px; font-size: 24px; cursor: pointer; color: #64748b;">&times;</span>
-            <h3 style="margin-top: 0; color: #d97706; text-align: center;">📊 Student Report Card Portal</h3>
-            <p style="text-align: center; font-size: 13px; color: #64748b; margin-bottom: 20px;">Enter Student ID (e.g., <strong>STU-2026</strong>) to view termly grades.</p>
-            
-            <form id="reportForm" style="margin-bottom: 20px;">
-                <div class="form-group" style="margin-bottom: 10px;">
-                    <label style="font-size: 13px; font-weight: bold;">Student ID / Registration Number:</label>
-                    <input type="text" id="reportStudentId" required placeholder="e.g., STU-2026" style="width: 100%; padding: 8px; border: 1px solid #cbd5e1; border-radius: 4px; box-sizing: border-box;">
-                </div>
-                <div class="form-group" style="margin-bottom: 10px;">
-                    <label style="font-size: 13px; font-weight: bold;">Select Term:</label>
-                    <select id="reportTerm" style="width: 100%; padding: 8px; border: 1px solid #cbd5e1; border-radius: 4px;">
-                        <option value="term1">Term 1, 2026</option>
-                        <option value="term2">Term 2, 2026</option>
-                    </select>
-                </div>
-                <button type="submit" class="download-btn" style="width: 100%; background: #d97706; border: none; padding: 10px;">View Report Card</button>
-            </form>
+    <div id="admissionModal" class="modal" style="display: none;"><div class="modal-content" style="max-width: 500px;"><span class="close-admission-modal">&times;</span><h3 style="color: #1e3a8a; text-align: center;">Admission Application</h3><form id="admissionForm"><div class="form-group"><label>Full Name:</label><input type="text" id="admName" required></div><div class="form-group"><label>Contact:</label><input type="text" id="admContact" required></div><button type="submit" class="download-btn" style="width: 100%; background: #1e3a8a; border: none; padding: 10px;">Submit</button></form></div></div>
 
-            <div id="reportResultBox" style="display: none; background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 6px; padding: 15px;">
-                <h4 style="margin-top: 0; color: #1e3a8a; border-bottom: 1px solid #e2e8f0; padding-bottom: 5px;">Report Card: <span id="resPupilName">Apio Sarah</span> (<span id="resPupilClass">Primary 5</span>)</h4>
-                <table style="width: 100%; font-size: 13px; border-collapse: collapse; margin-top: 10px;">
-                    <tr style="background: #e2e8f0; text-align: left;">
-                        <th style="padding: 6px;">Subject</th>
-                        <th style="padding: 6px;">Marks (%)</th>
-                        <th style="padding: 6px;">Grade</th>
-                    </tr>
-                    <tr><td style="padding: 6px; border-bottom: 1px solid #cbd5e1;">Mathematics</td><td style="padding: 6px; border-bottom: 1px solid #cbd5e1;">88%</td><td style="padding: 6px; border-bottom: 1px solid #cbd5e1;">D1 (Distinction)</td></tr>
-                    <tr><td style="padding: 6px; border-bottom: 1px solid #cbd5e1;">English</td><td style="padding: 6px; border-bottom: 1px solid #cbd5e1;">82%</td><td style="padding: 6px; border-bottom: 1px solid #cbd5e1;">D2 (Distinction)</td></tr>
-                    <tr><td style="padding: 6px; border-bottom: 1px solid #cbd5e1;">Science</td><td style="padding: 6px; border-bottom: 1px solid #cbd5e1;">91%</td><td style="padding: 6px; border-bottom: 1px solid #cbd5e1;">D1 (Distinction)</td></tr>
-                    <tr><td style="padding: 6px;">Social Studies (SST)</td><td style="padding: 6px;">79%</td><td style="padding: 6px;">C3 (Credit)</td></tr>
-                </table>
-                <p style="margin: 10px 0 0 0; font-size: 13px; color: #15803d; font-weight: bold;">Class Teacher Remark: Excellent academic progress and discipline!</p>
-            </div>
-        </div>
-    </div>
+    <div id="teacherUploadModal" class="modal" style="display: none;"><div class="modal-content" style="max-width: 500px;"><span class="close-upload-modal">&times;</span><h3 style="color: #15803d; text-align: center;">Upload Study Material</h3><form id="teacherUploadForm"><div class="form-group"><label>Title:</label><input type="text" id="uploadTitle" required></div><div class="form-group"><label>PDF File:</label><input type="file" id="uploadFile" accept=".pdf" required style="background:white;"></div><button type="submit" style="width: 100%; background: #15803d; color: white; border: none; padding: 12px; border-radius: 4px; font-weight: bold; cursor: pointer;">Publish</button></form></div></div>
 
-    <!-- Online Admission Application Modal -->
-    <div id="admissionModal" class="modal" style="display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.5);">
-        <div class="modal-content" style="background: white; margin: 8% auto; padding: 30px; width: 100%; max-width: 500px; border-radius: 8px; position: relative;">
-            <span class="close-admission-modal" style="position: absolute; right: 20px; top: 15px; font-size: 24px; cursor: pointer; color: #64748b;">&times;</span>
-            <h3 style="margin-top: 0; color: #1e3a8a; text-align: center;">Student Admission Application</h3>
-            <form id="admissionForm">
-                <div class="form-group" style="margin-bottom: 12px;">
-                    <label style="font-size: 13px; font-weight: bold;">Pupil's Full Name:</label>
-                    <input type="text" id="admName" required placeholder="e.g., Apio Sarah" style="width: 100%; padding: 8px; border: 1px solid #cbd5e1; border-radius: 4px; box-sizing: border-box;">
-                </div>
-                <div class="form-group" style="margin-bottom: 12px;">
-                    <label style="font-size: 13px; font-weight: bold;">Entering Class:</label>
-                    <select id="admClass" style="width: 100%; padding: 8px; border: 1px solid #cbd5e1; border-radius: 4px;">
-                        <option value="P1">Primary 1</option>
-                        <option value="P3">Primary 3</option>
-                        <option value="P5">Primary 5</option>
-                        <option value="P7">Primary 7</option>
-                    </select>
-                </div>
-                <div class="form-group" style="margin-bottom: 12px;">
-                    <label style="font-size: 13px; font-weight: bold;">Parent/Guardian Contact:</label>
-                    <input type="text" id="admContact" required placeholder="Phone number" style="width: 100%; padding: 8px; border: 1px solid #cbd5e1; border-radius: 4px; box-sizing: border-box;">
-                </div>
-                <button type="submit" class="download-btn" style="width: 100%; background: #1e3a8a; border: none; padding: 10px;">Submit Application</button>
-            </form>
-        </div>
-    </div>
+    <div id="roleLoginModal" class="modal" style="display: none;"><div class="modal-content" style="max-width: 400px;"><span class="close-role-modal">&times;</span><h3 id="modalRoleTitle" style="text-align: center;">Portal Login</h3><form id="roleLoginForm"><input type="hidden" id="targetRole" value=""><div class="form-group"><label>Username:</label><input type="text" id="roleUsername" required></div><div class="form-group"><label>Password:</label><input type="password" id="rolePassword" required></div><button type="submit" id="roleSubmitBtn" style="width: 100%; background: #2563eb; color: white; border: none; padding: 10px; border-radius: 4px; font-weight: bold; cursor: pointer;">Login</button><p id="roleLoginError" style="display: none; color: #dc2626; font-size: 14px; text-align: center; margin-top: 10px; font-weight: bold;">Invalid credentials.</p></form></div></div>
 
-    <!-- Teacher File Upload Modal -->
-    <div id="teacherUploadModal" class="modal" style="display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.5);">
-        <div class="modal-content" style="background: white; margin: 8% auto; padding: 30px; width: 100%; max-width: 500px; border-radius: 8px; position: relative;">
-            <span class="close-upload-modal" style="position: absolute; right: 20px; top: 15px; font-size: 24px; cursor: pointer; color: #64748b;">&times;</span>
-            
-            <h3 style="margin-top: 0; color: #15803d; text-align: center;">Upload Study Material</h3>
-            <p style="text-align: center; font-size: 14px; color: #64748b; margin-bottom: 20px;">Fill out the details below to publish a new note.</p>
-            
-            <form id="teacherUploadForm">
-                <div class="form-group" style="margin-bottom: 15px;">
-                    <label>Select Class:</label>
-                    <select id="uploadClass" required style="width: 100%; padding: 10px; border: 1px solid #cbd5e1; border-radius: 4px;">
-                        <option value="p1">Primary 1</option>
-                        <option value="p2">Primary 2</option>
-                        <option value="p3">Primary 3</option>
-                        <option value="p4">Primary 4</option>
-                        <option value="p5">Primary 5</option>
-                        <option value="p6">Primary 6</option>
-                        <option value="p7">Primary 7</option>
-                    </select>
-                </div>
-
-                <div class="form-group" style="margin-bottom: 15px;">
-                    <label>Select Subject:</label>
-                    <select id="uploadSubject" required style="width: 100%; padding: 10px; border: 1px solid #cbd5e1; border-radius: 4px;">
-                        <option value="math">Mathematics</option>
-                        <option value="english">English</option>
-                        <option value="science">Science</option>
-                        <option value="sst">Social Studies (SST)</option>
-                    </select>
-                </div>
-
-                <div class="form-group" style="margin-bottom: 15px;">
-                    <label>Note Title / Topic:</label>
-                    <input type="text" id="uploadTitle" required placeholder="e.g., Fraction Word Problems" style="width: 100%; padding: 10px; border: 1px solid #cbd5e1; border-radius: 4px; box-sizing: border-box;">
-                </div>
-
-                <div class="form-group" style="margin-bottom: 15px;">
-                    <label>Short Description:</label>
-                    <textarea id="uploadDesc" rows="3" required placeholder="Brief description of the content..." style="width: 100%; padding: 10px; border: 1px solid #cbd5e1; border-radius: 4px; box-sizing: border-box;"></textarea>
-                </div>
-
-                <div class="form-group" style="margin-bottom: 20px;">
-                    <label>Upload Document File (PDF):</label>
-                    <input type="file" id="uploadFile" accept=".pdf" required style="width: 100%; padding: 8px; border: 1px solid #cbd5e1; border-radius: 4px; background: #f8fafc;">
-                </div>
-                
-                <button type="submit" style="width: 100%; background: #15803d; color: white; border: none; padding: 12px; border-radius: 4px; font-weight: bold; cursor: pointer;">Publish to Notes Portal</button>
-            </form>
-        </div>
-    </div>
-
-    <!-- Unified Role Login Modal -->
-    <div id="roleLoginModal" class="modal" style="display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.5);">
-        <div class="modal-content" style="background: white; margin: 10% auto; padding: 30px; width: 100%; max-width: 400px; border-radius: 8px; position: relative;">
-            <span class="close-role-modal" style="position: absolute; right: 20px; top: 15px; font-size: 24px; cursor: pointer; color: #64748b;">&times;</span>
-            
-            <h3 id="modalRoleTitle" style="margin-top: 0; color: #1a365d; text-align: center;">Portal Login</h3>
-            <p id="modalRoleSubtitle" style="text-align: center; font-size: 14px; color: #64748b; margin-bottom: 20px;">Please enter your credentials.</p>
-            
-            <form id="roleLoginForm">
-                <input type="hidden" id="targetRole" value="">
-                
-                <div class="form-group" style="margin-bottom: 15px;">
-                    <label style="display: block; margin-bottom: 5px; font-weight: bold; font-size: 14px;">Username / ID:</label>
-                    <input type="text" id="roleUsername" required placeholder="Enter username" style="width: 100%; padding: 10px; border: 1px solid #cbd5e1; border-radius: 4px; box-sizing: border-box;">
-                </div>
-                
-                <div class="form-group" style="margin-bottom: 20px;">
-                    <label style="display: block; margin-bottom: 5px; font-weight: bold; font-size: 14px;">Password:</label>
-                    <input type="password" id="rolePassword" required placeholder="Enter password" style="width: 100%; padding: 10px; border: 1px solid #cbd5e1; border-radius: 4px; box-sizing: border-box;">
-                </div>
-                
-                <button type="submit" id="roleSubmitBtn" style="width: 100%; background: #2563eb; color: white; border: none; padding: 10px; border-radius: 4px; font-weight: bold; cursor: pointer;">Login</button>
-                <p id="roleLoginError" style="display: none; color: #dc2626; font-size: 14px; text-align: center; margin-top: 10px; font-weight: bold;">Invalid credentials for this portal.</p>
-            </form>
-        </div>
-    </div>
-
-    <!-- Contact & Feedback Section -->
+    <!-- Contact & Footer -->
     <section id="contact" class="contact-section">
         <div style="max-width: 600px; margin: 0 auto;">
             <h2>Contact School Administration</h2>
-            <p style="text-align: center; color: #64748b; margin-bottom: 20px;">Have questions about admissions or notes? Send us a message.</p>
-            
             <form id="contactForm">
-                <div class="form-group">
-                    <label>Your Name:</label>
-                    <input type="text" id="contactName" required placeholder="e.g., Parent or Student Name">
-                </div>
-                <div class="form-group">
-                    <label>Email or Phone Number:</label>
-                    <input type="text" id="contactContact" required placeholder="e.g., 0770000000">
-                </div>
-                <div class="form-group">
-                    <label>Message:</label>
-                    <textarea id="contactMessage" rows="4" required placeholder="Type your inquiry here..."></textarea>
-                </div>
+                <div class="form-group"><label>Your Name:</label><input type="text" id="contactName" required></div>
+                <div class="form-group"><label>Contact:</label><input type="text" id="contactContact" required></div>
+                <div class="form-group"><label>Message:</label><textarea id="contactMessage" rows="4" required></textarea></div>
                 <button type="submit" class="btn-primary">Send Message</button>
-                <p id="contactSuccess" style="display:none; color: #15803d; font-weight: bold; text-align: center; margin-top: 15px;">✔ Message sent successfully! We will get back to you.</p>
+                <p id="contactSuccess" style="display:none; color: #15803d; font-weight: bold; text-align: center; margin-top: 15px;">✔ Message sent successfully!</p>
             </form>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer>
         <div class="contact-info">
-    <p><strong>Phone:</strong> +256 762331952 / 762522647 / 782377367</p>
-    <p><strong>Email:</strong> stlawrencejslira@gmail.com</p>
-    <p><strong>P.O.BOX:</strong> 331752 LIRA</p>
-    <p><strong>Location:</strong> Former Almond College along Boundary Road, Kirombe West Cell, Adyel "B" Ward, City West Division, Lira City, Northern Uganda</p>
-</div>
+            <p><strong>Phone:</strong> +256 762331952 / 762522647 / 782377367</p>
+            <p><strong>Email:</strong> stlawrencejslira@gmail.com</p>
+            <p><strong>P.O.BOX:</strong> 331752 LIRA</p>
+            <p><strong>Location:</strong> Former Almond College along Boundary Road, Kirombe West Cell, Adyel "B" Ward, City West Division, Lira City, Northern Uganda</p>
+        </div>
         <p>&copy; 2026 St. Lawrence Junior School Lira. All rights reserved.</p>
     </footer>
 
