@@ -1,42 +1,45 @@
-/* General Layout */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f6f9;
-    color: #333;
+    color: #334155;
     scroll-behavior: smooth;
 }
 
 header {
-    background: #1a365d;
+    background: #440606;
     color: white;
-    padding: 15px 30px;
+    padding: 12px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 header nav ul {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 15px;
     align-items: center;
     margin: 0;
     padding: 0;
+    flex-wrap: wrap;
 }
 
 header nav ul li a {
     color: white;
     text-decoration: none;
+    transition: color 0.2s ease;
+    font-size: 14px;
 }
 
-/* Learning Notes Portal Grid Layout */
-.portal-section {
-    padding: 40px 20px;
-    max-width: 1100px;
-    margin: 0 auto;
-}
+header nav ul li a:hover { color: #f59e0b; }
+
+.portal-section { padding: 40px 20px; max-width: 1100px; margin: 0 auto; }
 
 .notes-grid {
     display: grid !important;
@@ -52,13 +55,15 @@ header nav ul li a {
     padding: 20px !important;
     box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05) !important;
     overflow: hidden;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-.card-actions {
-    display: flex !important;
-    gap: 10px !important;
-    margin-top: 15px !important;
+.note-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1) !important;
 }
+
+.card-actions { display: flex !important; gap: 10px !important; margin-top: 15px !important; }
 
 .download-btn, .preview-btn {
     padding: 8px 12px;
@@ -68,145 +73,82 @@ header nav ul li a {
     cursor: pointer;
     border: none;
     font-weight: bold;
+    transition: background-color 0.2s ease;
 }
 
 .download-btn { background: #2563eb; color: #ffffff; }
-.preview-btn { background: #e2e8f0; color: #1e293b; }
+.download-btn:hover { background: #1d4ed8; }
 
-/* Hero Section */
+.preview-btn { background: #e2e8f0; color: #1e293b; }
+.preview-btn:hover { background: #cbd5e1; }
+
 .hero {
-    background: linear-gradient(rgba(26, 54, 93, 0.8), rgba(26, 54, 93, 0.8)), center/cover;
+    background: linear-gradient(rgba(68, 6, 6, 0.85), rgba(26, 54, 93, 0.85)), center/cover;
     color: white;
     text-align: center;
-    padding: 60px 20px;
+    padding: 70px 20px;
 }
 
 .hero h1 { margin-bottom: 10px; font-size: 32px; }
 .hero p { margin-bottom: 20px; font-size: 16px; color: #cbd5e1; }
-.hero .btn { background: #f59e0b; color: #1e293b; padding: 10px 20px; border-radius: 6px; text-decoration: none; font-weight: bold; }
-
-/* Filter Container */
-.filter-container {
-    display: flex;
-    gap: 15px;
-    justify-content: center;
-    margin-bottom: 20px;
+.hero .btn { 
+    background: #f59e0b; color: #1e293b; padding: 12px 24px; border-radius: 6px; text-decoration: none; font-weight: bold; display: inline-block;
+    transition: transform 0.2s ease, background-color 0.2s ease;
 }
+.hero .btn:hover { background: #d97706; transform: scale(1.03); }
 
-.filter-container select {
-    padding: 8px 12px;
-    border-radius: 6px;
-    border: 1px solid #cbd5e1;
-    font-size: 14px;
-}
+.filter-container { display: flex; gap: 15px; justify-content: center; margin-bottom: 20px; flex-wrap: wrap; }
+.filter-container select { padding: 8px 12px; border-radius: 6px; border: 1px solid #cbd5e1; font-size: 14px; background: white; }
 
-/* Quiz Container */
 .quiz-container {
-    background: #ffffff;
-    padding: 40px 20px;
-    max-width: 800px;
-    margin: 30px auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+    background: #ffffff; padding: 40px 20px; max-width: 800px; margin: 30px auto; border-radius: 8px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
 }
-
 .quiz-subtitle { text-align: center; color: #64748b; margin-bottom: 20px; }
 .progress-box { background: #f8fafc; padding: 15px; border-radius: 6px; text-align: center; margin-bottom: 20px; border: 1px solid #e2e8f0; }
 
-.question-card {
-    background: #f8fafc;
-    border: 1px solid #e2e8f0;
-    padding: 15px;
-    border-radius: 6px;
-    margin-bottom: 15px;
-}
+.question-card { background: #f8fafc; border: 1px solid #e2e8f0; padding: 15px; border-radius: 6px; margin-bottom: 15px; }
+.question-card label { display: block; margin-top: 8px; cursor: pointer; font-size: 14px; }
 
-.question-card label {
-    display: block;
-    margin-top: 8px;
-    cursor: pointer;
-    font-size: 14px;
-}
+.btn-primary { background: #2563eb; color: white; border: none; padding: 10px 20px; border-radius: 6px; font-weight: bold; cursor: pointer; width: 100%; transition: background-color 0.2s ease; }
+.btn-primary:hover { background: #1d4ed8; }
 
-.btn-primary {
-    background: #2563eb;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 6px;
-    font-weight: bold;
-    cursor: pointer;
-    width: 100%;
-}
+.result-box { margin-top: 15px; padding: 15px; background: #f0fdf4; border: 1px solid #bbf7d0; color: #166534; border-radius: 6px; font-weight: bold; text-align: center; }
 
-.result-box {
-    margin-top: 15px;
-    padding: 15px;
-    background: #f0fdf4;
-    border: 1px solid #bbf7d0;
-    color: #166534;
-    border-radius: 6px;
-    font-weight: bold;
-    text-align: center;
-}
-
-/* Modal Styling */
 .modal {
-    display: none;
-    position: fixed;
-    z-index: 1000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.5);
+    display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.5); backdrop-filter: blur(2px);
+    animation: fadeIn 0.25s ease forwards;
 }
 
 .modal-content {
-    background: white;
-    margin: 10% auto;
-    padding: 30px;
-    width: 100%;
-    max-width: 500px;
-    border-radius: 8px;
-    position: relative;
+    background: white; margin: 8% auto; padding: 30px; width: 90%; max-width: 500px; border-radius: 8px; position: relative; box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1);
+    animation: slideUp 0.25s ease forwards;
 }
 
-.close-modal {
-    position: absolute;
-    right: 20px;
-    top: 15px;
-    font-size: 24px;
-    cursor: pointer;
-    color: #64748b;
-}
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes slideUp { from { transform: translateY(20px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
 
-.mock-pdf-viewer {
-    background: #f8fafc;
-    border: 2px dashed #cbd5e1;
-    padding: 30px;
-    text-align: center;
-    border-radius: 6px;
-    margin-top: 15px;
-    color: #475569;
+.close-modal, .close-fee-modal, .close-report-modal, .close-admission-modal, .close-upload-modal, .close-role-modal {
+    position: absolute; right: 20px; top: 15px; font-size: 24px; cursor: pointer; color: #64748b; transition: color 0.2s ease;
 }
+.close-modal:hover { color: #1e293b; }
 
-/* Contact Section */
-.contact-section {
-    background: #ffffff;
-    padding: 40px 20px;
-    border-top: 1px solid #e2e8f0;
-}
+.mock-pdf-viewer { background: #f8fafc; border: 2px dashed #cbd5e1; padding: 30px; text-align: center; border-radius: 6px; margin-top: 15px; color: #475569; }
 
+.contact-section { background: #ffffff; padding: 40px 20px; border-top: 1px solid #e2e8f0; }
 .form-group { margin-bottom: 15px; }
 .form-group label { display: block; margin-bottom: 5px; font-weight: bold; font-size: 14px; }
-.form-group input, .form-group textarea { width: 100%; padding: 10px; border: 1px solid #cbd5e1; border-radius: 4px; box-sizing: border-box; }
+.form-group input, .form-group textarea, .form-group select {
+    width: 100%; padding: 10px; border: 1px solid #cbd5e1; border-radius: 4px; box-sizing: border-box; font-size: 14px; transition: border-color 0.2s ease;
+}
+.form-group input:focus, .form-group textarea:focus, .form-group select:focus { outline: none; border-color: #2563eb; }
 
-/* Footer */
-footer {
-    background: #0f172a;
-    color: #94a3b8;
-    text-align: center;
-    padding: 20px;
-    font-size: 14px;
+footer { background: #0f172a; color: #94a3b8; text-align: center; padding: 30px 20px; font-size: 14px; line-height: 1.6; }
+
+@media (max-width: 768px) {
+    header { flex-direction: column; gap: 15px; padding: 15px; text-align: center; }
+    header nav ul { justify-content: center; gap: 12px; }
+    .hero { padding: 40px 15px; }
+    .hero h1 { font-size: 26px; }
+    .portal-section { padding: 25px 15px; }
+    .modal-content { margin: 15% auto; padding: 20px; width: 95%; }
 }
